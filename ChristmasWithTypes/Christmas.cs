@@ -1,14 +1,17 @@
-﻿using System;
-namespace ChristmasWithTypes
+﻿public class Christmas
 {
-    public class Christmas
+    public string Santa { get; set; }
+    public string[] Presents { get; set; }
+    public int TreeHeight { get; set; }
+
+    public enum Day
     {
-        public string[] Presents;
-        public string Santa { get; set; }
-        public int TreeHeight { get; set; } //TODO Make the Height property nullable
-
-        //TODO Make the property, "Day", type enum
-        public enum Day { /*Fill out the days of the week*/ };
-
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday
     }
 }
